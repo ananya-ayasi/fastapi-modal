@@ -1,20 +1,16 @@
-# ---
-# output-directory: "/tmp/chatterbox-tts"
-# lambda-test: false
-# cmd: ["modal", "serve", "06_gpu_and_ml/test-to-audio/chatterbox_tts.py"]
-# ---
 
+"""
 
-# # Create a Chatterbox TTS API on Modal
+ Create a Chatterbox TTS API on Modal
 
-# This example demonstrates how to deploy a text-to-speech (TTS) API using the Chatterbox TTS model on Modal.
-# The API accepts text prompts and returns generated audio as WAV files through a FastAPI endpoint.
-# We use Modal's class-based approach with GPU acceleration to provide fast, scalable TTS inference.
+This example demonstrates how to deploy a text-to-speech (TTS) API using the Chatterbox TTS model on Modal.
+The API accepts text prompts and returns generated audio as WAV files through a FastAPI endpoint.
+We use Modal's class-based approach with GPU acceleration to provide fast, scalable TTS inference.
 
-# ## Setup
+Setup
 
-# Import the necessary modules for Modal deployment and TTS functionality.
-
+Import the necessary modules for Modal deployment and TTS functionality.
+"""
 import io
 
 import modal
